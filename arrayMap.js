@@ -27,3 +27,12 @@ let mapNames = function() {
 }
 let map1 = mapNames(Animals);
 console.log(map1);
+
+//get rid of all cats with filter - chaining
+
+let noCats = function(array) {
+    return array.filter(e => e.species != 'cat')
+        .map(e => e.name);
+};
+let filterCats = noCats(Animals)
+console.log(filterCats)
