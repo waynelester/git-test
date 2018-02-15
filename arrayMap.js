@@ -20,3 +20,10 @@ function sort(array) {
 }
 let names = sort(Animals)
 console.log(names);
+
+let mapNames = function() {
+    let animalMap = Animals.map(e => e.name);
+    return animalMap;
+}
+let map1 = mapNames(Animals);
+console.log(map1);
